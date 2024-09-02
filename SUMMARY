@@ -1,0 +1,15 @@
+Here is a more technical summary of the project:
+
+1.The "proc_info.c" program successfully extracts and presents CPU-related information from the "/proc" filesystem when executed without parameters.
+
+2.Extending the functionality of "proc_info.c," the program intelligently processes command-line parameters (e.g. proc_info 2 5) to provide detailed CPU usage information.
+
+3.The shell program, encompassing "shell.c" and related functionalities, fulfills fundamental shell requirements. It supports foreground and background execution of processes, facilitates process manipulation with commands like bg and fg, and ensures correct management of the controlling terminal when switching between foreground and background jobs.
+
+4.Incorporating pipe functionality into the shell, the implementation allows for the creation of pipelines to connect the standard outputs and inputs of multiple processes. It ensures that file descriptors are properly handled and closed to prevent leaks.
+
+5.The shell program demonstrates robust error handling mechanisms. It provides informative error messages in case of command execution failures, input validation errors, or unexpected behaviors.
+
+6.The presence of a well-structured Makefile further streamlines the compilation process, contributing to the overall organization and usability of the project.
+
+In summary, the project showcases shell programming concepts, process management, I/O redirection, error handling, and documentation practices.

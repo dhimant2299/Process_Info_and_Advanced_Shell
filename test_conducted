@@ -1,0 +1,105 @@
+dhimant@dhimant-VirtualBox:~$ ./build
+COSC-6325/456Shell$ ls
+build	 Desktop    Downloads  Music	 proc	 proc_info    Public  shell  SUMMARY	Videos
+build.c  Documents  Makefile   Pictures  proc.c  proc_info.c  README  snap   Templates
+COSC-6325/456Shell$ ls -l
+total 148
+-rwxrwxr-x 1 dhimant dhimant 16896 Mar 15 14:15 build
+-rw-rw-r-- 1 dhimant dhimant  5412 Mar 15 14:17 build.c
+drwxr-xr-x 2 dhimant dhimant  4096 Mar 14 15:40 Desktop
+drwxr-xr-x 2 dhimant dhimant  4096 Mar  6 12:01 Documents
+drwxr-xr-x 2 dhimant dhimant  4096 Mar  6 12:01 Downloads
+-rw-rw-r-- 1 dhimant dhimant   522 Mar 15 12:06 Makefile
+drwxr-xr-x 2 dhimant dhimant  4096 Mar  6 12:01 Music
+drwxr-xr-x 3 dhimant dhimant  4096 Mar 15 13:50 Pictures
+-rwxrwxr-x 1 dhimant dhimant 16592 Mar 15 14:49 proc
+-rw-rw-r-- 1 dhimant dhimant  1989 Mar 15 14:49 proc.c
+-rwxrwxr-x 1 dhimant dhimant 16784 Mar 15 14:05 proc_info
+-rw-rw-r-- 1 dhimant dhimant  4586 Mar 15 14:17 proc_info.c
+drwxr-xr-x 2 dhimant dhimant  4096 Mar  6 12:01 Public
+-rw-rw-r-- 1 dhimant dhimant  1536 Mar 15 13:32 README
+-rwxrwxr-x 1 dhimant dhimant 16960 Mar 15 11:11 shell
+drwx------ 4 dhimant dhimant  4096 Mar  6 12:09 snap
+-rw-rw-r-- 1 dhimant dhimant  1486 Mar 15 14:09 SUMMARY
+drwxr-xr-x 2 dhimant dhimant  4096 Mar  6 12:01 Templates
+drwxr-xr-x 2 dhimant dhimant  4096 Mar  6 12:01 Videos
+COSC-6325/456Shell$ date
+Fri Mar 15 02:53:41 PM CDT 2024
+COSC-6325/456Shell$ cat README.md
+cat: README.md: No such file or directory
+COSC-6325/456Shell$ cat README
+README
+
+  Executables:
+
+1. proc_info - Executable for the proc_info program.
+2. build - Executable for the build.c shell program.
+
+  Compiling Instructions:
+
+- Use the provided Makefile to compile the executables: $ make
+
+- Ensure that you have GCC (GNU Compiler Collection) installed on your system to compile the source files.
+
+- If you encounter any issues during compilation or execution, refer to the Makefile for troubleshooting.
+
+- For proc_info, ensure that you have the necessary permissions to access and read process information.
+
+  IMPORTANT INFO:
+
+- The Makefile includes proc_info.c and build.c.
+  Using "gcc proc_info -o proc_info" compiles proc_info.c, allowing you to run the program with "./proc_info".
+  Similarly, "gcc build.c -o build" compiles build.c, enabling you to run the program with "./build" and,
+  subsequently launch a shell in your terminal.
+  ***Finally, The "build.c" program facilitates launching a shell program in the terminal after running "./build".
+  
+  Here are some things you can do with "./build":
+  
+  1. **Launch a Shell:** "./build" starts a shell program.
+
+  2. **Execute System Commands:** Runs system commands. Example: "ls -al", "ps aux".
+
+  3. **Custom Operations:** Performs custom tasks. Example: Custom scripts or programs.
+
+  4. **Process Management:** Manages processes. Example: "ps", "kill".
+
+  5. **File Operations:** Reads/writes files. Example: "cat", "echo > file.txt".
+
+  6. **System Services:** Interacts with system services. Example: "systemctl start service_name".  
+COSC-6325/456Shell$ ls -l
+total 148
+-rwxrwxr-x 1 dhimant dhimant 16896 Mar 15 14:15 build
+-rw-rw-r-- 1 dhimant dhimant  5412 Mar 15 14:17 build.c
+drwxr-xr-x 2 dhimant dhimant  4096 Mar 14 15:40 Desktop
+drwxr-xr-x 2 dhimant dhimant  4096 Mar  6 12:01 Documents
+drwxr-xr-x 2 dhimant dhimant  4096 Mar  6 12:01 Downloads
+-rw-rw-r-- 1 dhimant dhimant   522 Mar 15 12:06 Makefile
+drwxr-xr-x 2 dhimant dhimant  4096 Mar  6 12:01 Music
+drwxr-xr-x 3 dhimant dhimant  4096 Mar 15 13:50 Pictures
+-rwxrwxr-x 1 dhimant dhimant 16592 Mar 15 14:49 proc
+-rw-rw-r-- 1 dhimant dhimant  1989 Mar 15 14:49 proc.c
+-rwxrwxr-x 1 dhimant dhimant 16784 Mar 15 14:05 proc_info
+-rw-rw-r-- 1 dhimant dhimant  4586 Mar 15 14:17 proc_info.c
+drwxr-xr-x 2 dhimant dhimant  4096 Mar  6 12:01 Public
+-rw-rw-r-- 1 dhimant dhimant  1536 Mar 15 13:32 README
+-rwxrwxr-x 1 dhimant dhimant 16960 Mar 15 11:11 shell
+drwx------ 4 dhimant dhimant  4096 Mar  6 12:09 snap
+-rw-rw-r-- 1 dhimant dhimant  1486 Mar 15 14:09 SUMMARY
+drwxr-xr-x 2 dhimant dhimant  4096 Mar  6 12:01 Templates
+drwxr-xr-x 2 dhimant dhimant  4096 Mar  6 12:01 Videos
+COSC-6325/456Shell$ ls -l &
+COSC-6325/456Shell$ echo "Foreground COmmand"
+"Foreground COmmand"
+COSC-6325/456Shell$ sleep 10 &
+COSC-6325/456Shell$ fg
+execvp: No such file or directory
+COSC-6325/456Shell$ ./build ls | grep "test"
+COSC-6325/456Shell$ 
+shell: syntax error
+COSC-6325/456Shell$ ls | grep "test"
+build	 Desktop    Downloads  Music	 proc	 proc_info    Public  shell  SUMMARY	Videos
+build.c  Documents  Makefile   Pictures  proc.c  proc_info.c  README  snap   Templates
+COSC-6325/456Shell$ exit
+COSC-6325/456Shell$ exit
+dhimant@dhimant-VirtualBox:~$ 
+

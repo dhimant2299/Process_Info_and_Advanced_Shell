@@ -1,0 +1,51 @@
+README
+
+  Executables:
+
+1. proc_info - Executable for the proc_info program.
+2. build - Executable for the build.c shell program.
+
+  Compiling Instructions:
+
+- Use the provided Makefile to compile the executables: $ make
+
+- Ensure that you have GCC (GNU Compiler Collection) installed on your system to compile the source files.
+
+- If you encounter any issues during compilation or execution, refer to the Makefile for troubleshooting.
+
+- For proc_info, ensure that you have the necessary permissions to access and read process information.
+
+  IMPORTANT INFO:
+
+- The Makefile includes proc_info.c and build.c.
+  Using "gcc proc_info -o proc_info" compiles proc_info.c, allowing you to run the program with "./proc_info".
+  Similarly, "gcc build.c -o build" compiles build.c, enabling you to run the program with "./build" and,
+  subsequently launch a shell in your terminal.
+  ***Finally, The "build.c" program facilitates launching a shell program in the terminal after running "./build".
+  
+  Here are some things you can do with "./build":
+  
+  1. **Launch a Shell:** "./build" starts a shell program.
+
+  2. **Execute System Commands:** Runs system commands. Example: "ls -al", "ps aux".
+
+  3. **Custom Operations:** Performs custom tasks. Example: Custom scripts or programs.
+
+  4. **Process Management:** Manages processes. Example: "ps", "kill".
+
+  5. **File Operations:** Reads/writes files. Example: "cat", "echo > file.txt".
+
+  6. **System Services:** Interacts with system services. Example: "systemctl start service_name".  
+  
+  Tests Conducted: 
+  proc_info
+  proc_info 2 2 
+  ./build 
+  ls
+  pwd 
+  ls -l 
+  date 
+  cat README 
+  echo "Foreground Command" 
+  ls | grep "test" 
+  exit  
